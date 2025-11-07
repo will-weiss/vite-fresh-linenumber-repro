@@ -1,0 +1,24 @@
+{
+  "tasks": {
+    "start": "vite",
+    "start_no_sourcemaps": "NO_SOURCE_MAPS=1 vite"
+  },
+  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
+  "fmt": {
+    "indentWidth": 2,
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["**/*.ts", "**/*.tsx"]
+  },
+  "lint": {
+    "rules": { "include": ["no-unused-vars"], "tags": ["fresh", "recommended"] }
+  },
+  "imports": {
+    "fresh": "jsr:@fresh/core@2.1.4",
+    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.7",
+    "vite": "npm:vite@^7.1.3"
+  },
+  "exclude": ["**/_fresh/*"],
+  "nodeModulesDir": "auto"
+}
